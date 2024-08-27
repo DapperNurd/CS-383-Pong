@@ -30,7 +30,7 @@ public class Paddle : MonoBehaviour
                 // We track the Ball's position by using the Singleton behavior. If we wanted more balls per scene, this would get more complicated and need a rework.
                 
                 // Here we want the enemy to follow the ball if it's active, otherwise go back to the starting point (0).
-                float targetPos = Ball.Instance.gameObject.activeSelf ? Ball.Instance.transform.position.y : 0;
+                float targetPos = Ball.Instance.gameObject.activeSelf && !Ball.Instance.isGameOver ? Ball.Instance.transform.position.y : 0;
 
                 if (targetPos - transform.position.y > 0.45f) movement = Vector2.up;
                 else if (targetPos - transform.position.y < -0.45f) movement = Vector2.down;

@@ -14,6 +14,8 @@ public class Ball : MonoBehaviour
     SpriteRenderer sr;
     TrailRenderer tr;
 
+    public bool isGameOver = false;
+
     private void Awake() {
         if (Instance == null) Instance = this;
         else Destroy(this);
