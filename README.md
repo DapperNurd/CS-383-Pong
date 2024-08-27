@@ -1,5 +1,5 @@
 Quick launch:
-1. Download the Pong.zip file from the repository.
+1. Download the "CS-383 Pong.zip" file from the repository.
 2. Extract the content to anywhere you'd like on your computer.
 3. Run the "CS-383 Pong.exe" to launch the game.
 
